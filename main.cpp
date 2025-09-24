@@ -28,13 +28,13 @@ int main() {
 
 	printf("\n\n");
 
-	PA->IrPara(4);
+	PA->irPara(4);
 	for (int i = 1; i < 11; i++) {
 			printf("\nTermo %d : %.2f", PA->getIndice(), PA->getValor());
-			PA->Avancar();
+			PA->avancar();
 		}
 
-	PA->Iniciar();
+	PA->iniciar();
 	printf("\nTermo %d : %.2f", PA->getIndice(), PA->getValor());
 
 
@@ -62,7 +62,7 @@ int main() {
 
 	printf("\n\n");
 
-	PA->IrPara(4);
+	PA->irPara(4);
 	for (int i = 1; i < 11; i++) {
 			printf("\nTermo %d : %.2f", PG->getIndice(), PG->getValor());
 			PG->Avancar();

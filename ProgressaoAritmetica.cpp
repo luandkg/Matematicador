@@ -46,7 +46,7 @@ float ProgressaoAritmetica::getValor() const {
 	return this->getTermo(m_indice);
 }
 
-bool ProgressaoAritmetica::ExisteAnterior() {
+bool ProgressaoAritmetica::existeAnterior() {
 	if (m_indice < 1) {
 		return false;
 	} else {
@@ -54,7 +54,7 @@ bool ProgressaoAritmetica::ExisteAnterior() {
 	}
 }
 
-bool ProgressaoAritmetica::ExisteProximo() {
+bool ProgressaoAritmetica::existeProximo() {
 	if (m_indice < 1) {
 		return false;
 	} else {
@@ -62,7 +62,7 @@ bool ProgressaoAritmetica::ExisteProximo() {
 	}
 }
 
-void ProgressaoAritmetica::Avancar() {
+void ProgressaoAritmetica::avancar() {
 	if (m_indice < 1) {
 
 	} else {
@@ -70,7 +70,7 @@ void ProgressaoAritmetica::Avancar() {
 	}
 }
 
-void ProgressaoAritmetica::Voltar() {
+void ProgressaoAritmetica::voltar() {
 	if (m_indice <= 1) {
 
 	} else {
@@ -78,11 +78,11 @@ void ProgressaoAritmetica::Voltar() {
 	}
 }
 
-void ProgressaoAritmetica::Iniciar(){
+void ProgressaoAritmetica::iniciar(){
 	m_indice = 1;
 }
 
-void ProgressaoAritmetica::IrPara(int Termo){
+void ProgressaoAritmetica::irPara(int Termo){
 	if (Termo > 0){
 		m_indice = Termo;
 	} else{

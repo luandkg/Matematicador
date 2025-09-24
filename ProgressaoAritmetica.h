@@ -36,13 +36,13 @@ public:
 	int getIndice() const;
 	float getValor() const;
 
-	bool ExisteAnterior();
-	bool ExisteProximo();
+	bool existeAnterior();
+	bool existeProximo();
 
-	void Iniciar();
-	void Avancar();
-	void Voltar();
-	void IrPara(int Termo);
+	void iniciar();
+	void avancar();
+	void voltar();
+	void irPara(int Termo);
 
 };
 
