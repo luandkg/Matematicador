@@ -46,6 +46,10 @@ public:
 	void voltar()  override;
 	void irPara(int Termo)  override;
 
+
+	enum Tipo {CONSTANTE, CRESCENTE, ALTERNADA};
+
+	Tipo classificar() const;
 };
 
 #endif

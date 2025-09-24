@@ -39,23 +39,41 @@ float ProgressaoGeometrica::getSomatorio(int n) const {
 	return ((m_PrimeiroTermo + this->getTermo(n)) * n) / 2;
 }
 
-std::string ProgressaoGeometrica::getTipo() const {
+ProgressaoGeometrica::Tipo ProgressaoGeometrica::classificar() const {
 
 	if (m_Razao == 0) {
-		return std::string("Constante");
+		return ProgressaoGeometrica::CONSTANTE;
 	} else if (m_Razao > 0 && m_PrimeiroTermo>0) {
-		return std::string("Crescente");
+		return ProgressaoGeometrica::CRESCENTE;
 	} else if (m_Razao > 0 && m_PrimeiroTermo<0) {
-		return std::string("Crescente");
+		return ProgressaoGeometrica::CRESCENTE;
 	} else if (m_Razao < 0 && m_PrimeiroTermo>0) {
-		return std::string("Alternada");
+		return ProgressaoGeometrica::ALTERNADA;
 	} else if (m_Razao < 0 && m_PrimeiroTermo<0) {
-		return std::string("Alternada");
+		return ProgressaoGeometrica::ALTERNADA;
 	} else {
-		return std::string("DESCONHECIDA");
+		return {};
 	}
 
 }
+
+std::string ProgressaoGeometrica::getTipo() const {
+	switch (classificar()) {
+		case ProgressaoGeometrica::CONSTANTE: {
+			return std::string("Constante");
+		}
+			break;
+		case ProgressaoGeometrica::CRESCENTE: {
+			return std::string("Crescente");
+		}
+			break;
+		case ProgressaoGeometrica::ALTERNADA: {
+			return std::string("Alternada");
+		}
+			break;
+	}
+}
+
 
 int ProgressaoGeometrica::getIndice() const {
 	return this->m_indice;
