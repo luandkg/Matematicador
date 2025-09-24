@@ -65,10 +65,10 @@ int main() {
 	PA->irPara(4);
 	for (int i = 1; i < 11; i++) {
 			printf("\nTermo %d : %.2f", PG->getIndice(), PG->getValor());
-			PG->Avancar();
+			PG->avancar();
 		}
 
-	PG->Iniciar();
+	PG->iniciar();
 	printf("\nTermo %d : %.2f", PG->getIndice(), PG->getValor());
 
 

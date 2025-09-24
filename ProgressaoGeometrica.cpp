@@ -65,7 +65,7 @@ float ProgressaoGeometrica::getValor() const {
 	return this->getTermo(m_indice);
 }
 
-bool ProgressaoGeometrica::ExisteAnterior() {
+bool ProgressaoGeometrica::existeAnterior() {
 	if (m_indice < 1) {
 		return false;
 	} else {
@@ -73,7 +73,7 @@ bool ProgressaoGeometrica::ExisteAnterior() {
 	}
 }
 
-bool ProgressaoGeometrica::ExisteProximo() {
+bool ProgressaoGeometrica::existeProximo() {
 	if (m_indice < 1) {
 		return false;
 	} else {
@@ -81,7 +81,7 @@ bool ProgressaoGeometrica::ExisteProximo() {
 	}
 }
 
-void ProgressaoGeometrica::Avancar() {
+void ProgressaoGeometrica::avancar() {
 	if (m_indice < 1) {
 
 	} else {
@@ -89,7 +89,7 @@ void ProgressaoGeometrica::Avancar() {
 	}
 }
 
-void ProgressaoGeometrica::Voltar() {
+void ProgressaoGeometrica::voltar() {
 	if (m_indice <= 1) {
 
 	} else {
@@ -97,11 +97,11 @@ void ProgressaoGeometrica::Voltar() {
 	}
 }
 
-void ProgressaoGeometrica::Iniciar(){
+void ProgressaoGeometrica::iniciar(){
 	m_indice = 1;
 }
 
-void ProgressaoGeometrica::IrPara(int Termo){
+void ProgressaoGeometrica::irPara(int Termo){
 	if (Termo > 0){
 		m_indice = Termo;
 	} else{
