@@ -1,4 +1,4 @@
-#include "ProgressaoGeometrica.h"
+#include "../progressao/ProgressaoGeometrica.h"
 
 ProgressaoGeometrica::ProgressaoGeometrica(float PrimeiroTermo, float Razao) {
 	m_PrimeiroTermo = PrimeiroTermo;

@@ -1,8 +1,8 @@
 
 #include <stdio.h>
 
-#include "ProgressaoAritmetica.h"
-#include "ProgressaoGeometrica.h"
+#include "progressao/ProgressaoAritmetica.h"
+#include "progressao/ProgressaoGeometrica.h"
 
 int main() {
 

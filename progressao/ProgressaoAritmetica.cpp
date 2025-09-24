@@ -1,6 +1,6 @@
-#include "ProgressaoAritmetica.h"
+#include "../progressao/ProgressaoAritmetica.h"
 
-ProgressaoAritmetica::ProgressaoAritmetica(float PrimeiroTermo, float Razao) {
+ProgressaoAritmetica::ProgressaoAritmetica(float PrimeiroTermo, float Razao) : Progressao() {
 	m_PrimeiroTermo = PrimeiroTermo;
 	m_Razao = Razao;
 	m_indice = 1;
