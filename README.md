@@ -1,4 +1,4 @@
-# 📜 README: Matematicador
+# 📜 Matematicador
 
 ## 🚀 Sobre o Projeto
 
